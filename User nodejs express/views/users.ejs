@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Users</h1>
+
+    <table>
+
+        <% for (var i=0; i< users.length; i++){ %>
+            <tr>
+                <td>
+                    Id :<%= users[i].id %>
+                </td>
+                <td>
+                    First name: <%= users[i].f_name %>
+                </td>
+                <td>
+                    Last name: <%= users[i].l_name%>
+                </td>
+                <td>
+                    Email: <%= users[i].email%>
+                </td>
+                <td><a href="/users/<%= users[i].id %>"><button>delete</button></a></td>
+                <td><a href="/formupdate/<%= users[i].id %>"><button>update</button></a></td>
+            </tr>
+            <%}%>
+    </table>
+
+    <a href="/form"><button>Add user</button></a>
+
+</body>
+
+</html>
