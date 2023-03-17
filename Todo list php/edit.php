@@ -70,9 +70,9 @@ $pdo = null;
                             <form action="" method="POST">
                                 <input type="text" name="list" id="" placeholder="Todo" class="form-control" value="<?= $result['list'] ?>"><br>
                                 <select name=priority class="form-select form-select-sm">
-                                    <option value="Low">Low</option>
-                                    <option value="Medium">Medium</option>
-                                    <option value="High">High</option>
+                                    <option value="Low" <?php if($result['priorité'] == "Low") : ?> selected <?php endif; ?>>Low</option>
+                                    <option value="Medium" <?php if($result['priorité'] == "Medium") : ?> selected <?php endif; ?>>Medium</option>
+                                    <option value="High" <?php if($result['priorité'] == "High") : ?> selected <?php endif; ?>>High</option>
                                 </select><br>
                                 <input type="submit" value="Modify" name="submit" class="btn btn-primary">
                             </form>
