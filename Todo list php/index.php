@@ -1,6 +1,8 @@
 <?php
 
-$pdo = new PDO("mysql:host=mysql-andrieux.alwaysdata.net;dbname=andrieux_todolist", "andrieux", "Camels01*");
+/* $pdo = new PDO("mysql:host=mysql-andrieux.alwaysdata.net;dbname=andrieux_todolist", "andrieux", "Camels01*"); */
+
+require_once("connexion.php");
 
 if (isset($_POST)) {
 
@@ -45,10 +47,10 @@ $pdo = null;
 </head>
 
 <body>
-    <section class="vh-100 gradient-custom-2">
-        <div class="container py-5 h-100">
+    <section class="gradient-custom-2">
+        <div class="container py-5">
 
-            <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="row d-flex justify-content-center align-items-center">
 
                 <div class="col-md-12 col-xl-10">
 
