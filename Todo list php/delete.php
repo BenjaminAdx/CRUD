@@ -1,6 +1,6 @@
 <?php
 
-$pdo = new PDO("mysql:host=mysql-andrieux.alwaysdata.net;dbname=andrieux_todolist", "andrieux", "Camels01*");
+require_once("connexion.php");
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $id = $_GET['id'];
